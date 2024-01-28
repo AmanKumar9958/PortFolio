@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- NAVBAR -->
+        <div class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li><a class="nav-list-links" href="index.html">Home</a></li>
+                    <li><a class="nav-list-links" href="about.html">About</a></li>
+                    <li><a class="nav-list-links" href="contact.html">Contact</a></li>
+                    <li><a class="nav-list-links" href="project.html">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- PAGE1 -->
+        <div class="page1">
+            <div class="info">
+                <h3><span class="info-greet">Hello,</span> <span class="info-greet">Welcome</span></h3> <br>
+                <h2>I am <span><span class="my-name">A</span><span class="my-name">m</span><span class="my-name">a</span><span class="my-name">n</span> <span class="my-name">K</span><span class="my-name">u</span><span class="my-name">m</span><span class="my-name">a</span><span class="my-name">r</span></h2> <br>
+                <h3 id="text">I'm <span class="auto-type"></span></h3><br>
+                <p>Hello there! I'm Aman Kumar, a passionate and innovative <b>Web Designer</b> and <b>Developer</b> <br>on a mission to transform ideas into visually stunning digital experiences.<br> With a keen eye for detail and a love for pixel-perfect design, I specialize in crafting <br>websites that not only look beautiful but also deliver seamless user experiences, with <b>full responsiveness</b>.</p> <br>
+                <a class="contact-btn" href="contact.html"><button>Let's Connect</button></a>
+                <div class="social">
+                    <a href="https://github.com/AmanKumar9958" target="_blank"><i class="fab fa-github social-icons"></i></a>
+                    <a href="www.linkedin.com/in/aman-kumar-39a7b7292" target="_blank"><i class="fa-brands fa-linkedin social-icons"></i></a>
+                </div>
+            </div>
+            
+            <div class="image">
+                <img src="images/MyImage.jpg" alt="" id="pc-img">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+                                <!-- JAVASCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type",{
+            strings: ["Web Developer.", "Web Designer.", "Frontend Designer."],
+            typeSpeed: 80,
+            backSpeed:80,
+            loop: true,
+        })
+        gsap.from(".logo",
+        {
+            x:-100,
+            delay:1,
+            duration:1.5,
+            opacity:0,
+        })
+        gsap.from(".nav-list li",{
+            y:-100,
+            delay:0.5,
+            duration:1,
+            opacity:0,
+            stagger:0.3,
+        })
+        // gsap.from(".info-greet",{
+        //     y:100,
+        //     delay:1,
+        //     duration:1,
+        //     opacity:0,
+        //     stagger:0.7,
+        // })
+        gsap.from(".contact-btn",{
+            y:-50,
+            delay:1,
+            duration:1.5,
+            opacity:0,
+        })
+        gsap.from(".image img",{
+            // x:200,
+            // delay:1,
+            // duration:0.5,
+            scale:0,
+            opacity:0,
+        })
+        gsap.from(".my-name",{
+            x:-400,
+            delay:1,
+            duration:0.5,
+            opacity:0,
+            stagger:0.2,
+        })
+        // gsap.to(".contact-btn",{
+        //     x:40,
+        //     repeat:-1,               //Chl nhi rha hai
+        //     duration:0.7,
+        //     yoyo:true
+        // })
+    </script>
+</body>
+</html>
