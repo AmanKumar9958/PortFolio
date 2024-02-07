@@ -38,7 +38,7 @@ int main()
     printf("\n");
     }
     
-    // getch();
+    getch();
     return 0;
     
 }
