@@ -1,0 +1,52 @@
+.work:hover{
+    background-color: yellow;
+    border-color: yellow;
+    color: black;
+}
+@keyframes wave{
+    0%{
+        transform: rotate(0deg);
+    }
+    10%{
+        transform: rotate(14deg);
+    }
+    20%{
+        transform: rotate(-8deg);
+    }
+    30%{
+        transform: rotate(14deg);
+    }
+    40%{
+        transform: rotate(-4deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav ul li a.active{
+    color: green;
+}
+.work:hover #right-arrow{
+    transform: rotate(90deg);
+}
+.speciality-gif img:hover{
+    scale: 1.1;
+}
