@@ -48,5 +48,22 @@ nav ul li a.active{
     transform: rotate(90deg);
 }
 .speciality-gif img:hover{
-    scale: 1.1;
+    transform: translateY(-15px);
+    box-shadow: 0 8px 50px #23232380;
+}
+
+.skills-img:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+@keyframes up{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }

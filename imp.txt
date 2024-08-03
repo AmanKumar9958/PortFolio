@@ -26,3 +26,34 @@ cross mark = <i class="fa-solid fa-xmark"></i>
 3 line mark = <i class="fa-solid fa-bars"></i>
 arrow = <i class="fa-solid fa-arrow-right"></i>
 speedometer = <i class="fa-solid fa-gauge-simple-high"></i>
+
+
+
+
+<div class="aboutMe">
+    <img src="images/MyImage.jpg" alt="MyImage">
+    <h2 style="font-size: 2em; margin-top: 3vh;">Who is this guy?</h2>
+    <p style="font-size: 1.1em;">I am Full-Stack Developer. <br> I have serious passion for Web Development, <br> UI Effects, animations and dynamic user experience</p>
+</div>
+
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.aboutMe h2, p{
+    text-align: center;
+    color: #444649;
+    line-height: 1.5;
+}
+.aboutMe img{
+    /* border: 2px solid; */
+    border-radius: 50%;
+    border-image: linear-gradient(to right, yellow, black);
+    border-image-slice: 1;
+    display: inline-block;
+    width: 20vw;
+    margin-top: 10vh;
+}

@@ -11,6 +11,7 @@
 </head>
 <body>
     <div class="main">
+        <!-- Home -->
         <div class="page" id="home">
             <!-- Introduction -->
             <div class="intro">
@@ -18,19 +19,23 @@
                 <h1>I'm a full-stack web developer.</h1>
                 <a href="#about"><button class="work">View my work <span id="right-arrow"><img src="images/right-arrow.png" alt=""></span></button></a>
             </div>
+            <div class="uparrow">
+                <img src="images/upArrow.svg" alt="upArrow" id="upArrow">
+            </div>
         </div>
+        <!-- navbar -->
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!-- About -->
         <div class="page" id="about">
-            <!-- navbar -->
-            <nav id="navbar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
             <!-- About Content -->
-            <h1 id="about-heading">About</h1>
+            <h1 class="heading">About</h1>
             <hr id="underline">
             <div class="speciality">
                 <span class="speciality-gif">
@@ -53,45 +58,51 @@
                 <hr id="vertLine">
                 <span class="speciality-gif">
                     <img src="images/rocket.gif" alt="Dynamic">
-                    <h2>Dynamic</h2>
+                    <h3>Dynamic</h3>
                     <p>Websites don't have to be static, I love<br>making pages come to life.</p>
                 </span>
             </div>
             <div class="main-about">
-                <!-- About -->
+                <!-- About Me-->
                 <div class="aboutMe">
-                    <img src="images/MyImage.jpg" alt="MyImage">
-                    <h2 style="font-size: 2em; margin-top: 3vh;">Who is this guy?</h2>
-                    <p style="font-size: 1.1em;">I am Full-Stack Developer. <br> I have serious passion for Web Development, <br> UI Effects, animations and dynamic user experience</p>
-                </div>
-                <div class="tech-stack">
-                    <!-- Tech Stack -->
-                    <h2>Tech Stack</h2>
-                    <!-- Web Development Container -->
-                    <div class="development-container stack">
-                        <h3 style="color: #444649; border-radius: 15px; margin: 5vh 0; font-size: 2rem; border: 2px solid black; background-color: rgba(255, 255, 0, 0.568);">Development</h3>
-                        <div class="development-container-1">
-                            <img class="webDevImg" src="images/HTML.png" alt="HTML">
-                            <img class="webDevImg" src="images/CSS.png" alt="CSS">
-                            <img class="webDevImg" src="images/JavaScript.png" alt="JavaScript">
-                        </div>
-                        <div class="development-container-2">
-                            <img class="webDevImg" src="images/react.png" alt="React">
-                            <img class="webDevImg" src="images/nodejs.png" alt="NodeJS">
-                            <img class="webDevImg" src="images/expressjs.png" alt="ExpressJS">
-                        </div>
+                    <div class="aboutMe-left">
+                        <img src="images/MyImage3.png" alt="AmanKumar">
                     </div>
-                    <!-- Tools Container -->
-                    <div class="tools-container stack">
-                        <h3 style="color: #444649; border-radius: 15px; margin: 5vh 0; font-size: 2rem; border: 2px solid black; background-color: rgba(255, 255, 0, 0.568);">Tools</h3>
-                        <img class="webDevImg" src="images/github.png" alt="Github">
+                    <div class="aboutMe-right">
+                        <p>
+                            I'm an enthusiastic full stack web developer with a strong foundation in both front-end and back-end technologies. I have experience in HTML, CSS, JavaScript, React, and backend technologies. I enjoy creating interactive and dynamic web applications, and I am always eager to learn new technologies. My goal is to build efficient, scalable, and user-friendly web solutions. I am committed to continuous improvement and enjoy taking on new challenges.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Skills -->
+        <div class="page" id="skills">
+            <h1 class="heading">Skills</h1>
+            <hr id="underline">
+            <div class="skills-main">
+                <div class="skills-container">
+                    <img src="images/HTML.png" alt="HTML" class="skills-img">
+                    <img src="images/CSS.png" alt="CSS" class="skills-img">
+                    <img src="images/JavaScript.png" alt="JavaScript" class="skills-img">
+                </div>
+                <div class="skills-container">
+                    <img src="images/C.webp" alt="C" class="skills-img">
+                    <img src="images/cpp.webp" alt="CPP" class="skills-img">
+                    <img src="images/python.webp" alt="python" class="skills-img">
+                </div>
+                <div class="skills-container">
+                    <img src="images/react.png" alt="React" class="skills-img">
+                    <img src="images/nodejs.png" alt="Node" class="skills-img">
+                </div>
+                <div class="skills-container"></div>
+            </div>
+        </div>
+        <!-- Project -->
         <div class="page" id="project"></div>
+        <!-- Contact -->
         <div class="page" id="contact"></div>
     </div>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
