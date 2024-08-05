@@ -1,8 +1,5 @@
-.work:hover{
-    background-color: yellow;
-    border-color: yellow;
-    color: black;
-}
+
+/* Hello */
 @keyframes wave{
     0%{
         transform: rotate(0deg);
@@ -30,6 +27,7 @@
     }
 }
 
+/* navbar */
 nav ul li a:hover{
     color: yellow;
 }
@@ -40,18 +38,15 @@ nav ul li a:hover{
     right: 0;
     z-index: 1000;
 }
-
 nav ul li a.active{
     color: green;
 }
-.work:hover #right-arrow{
-    transform: rotate(90deg);
-}
+
+/* Skills */
 .speciality-gif img:hover{
     transform: translateY(-15px);
     box-shadow: 0 8px 50px #23232380;
 }
-
 .skills-img:hover{
     transform: translateY(-15px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
